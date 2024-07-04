@@ -9,12 +9,14 @@
         body {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             height: 100vh;
         }
         .container {
-            text-align: center;
+            width: 80%;
+            margin: auto;
+            text-align: left;
         }
         h1 {
             font-size: 3em;
@@ -24,19 +26,19 @@
         }
         .top-panel, .bottom-panel {
             width: 100%;
-            text-align: center;
-            padding: 10px;
+            text-align: left;
+            padding: 10px 30px;
             background-color: #001F3F;
             color: #41C6FF;
         }
         .menu {
             display: flex;
-            justify-content: center;
+            justify-content: left;
             gap: 20px;
         }
         .menu a {
             color: #41C6FF;
-            text-decoration: none;
+            text-decoration: none;            
         }
         .menu a:hover {
             color: #ffffff;
@@ -46,6 +48,7 @@
 <body>
     <div class="top-panel">
         <div class="menu">
+          <img src="icon.svg" alt="Icon" style="width: 2%; height: auto;">
             <a href="#">Home</a>
             <a href="#">About</a>
             <a href="#">Contact</a>
