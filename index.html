@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Construction</title>
+    <title>Červenka Jakub</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            justify-content: space-between;
             align-items: center;
             height: 100vh;
         }
@@ -21,12 +22,41 @@
         p {
             font-size: 1.2em;
         }
+        .top-panel, .bottom-panel {
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            background-color: #001F3F;
+            color: #41C6FF;
+        }
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .menu a {
+            color: #41C6FF;
+            text-decoration: none;
+        }
+        .menu a:hover {
+            color: #ffffff;
+        }
     </style>
 </head>
 <body>
+    <div class="top-panel">
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
     <div class="container">
-        <h1>Site Under Construction</h1>
-        <p>We are working hard to bring you a better experience. Please check back later.</p>
+        <h1>Červenka Jakub</h1>
+        <p>Chemik, IT specialista, Barman</p>
+    </div>
+    <div class="bottom-panel">
+        vytvořil Červenka Jakub
     </div>
 </body>
 </html>
