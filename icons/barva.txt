@@ -1,0 +1,56 @@
+Space Mono
+#001F3F Original Dark
+#41C6FF Original Blue
+#023E58 Intermediate Darker Blue
+#A0E3FF 1/2 Colourfull blue
+#C0ECFF 1/3 Colourfull blue
+#E0F7FF Used White
+#F0FAFF Whitest White
+
+Chemik
+IT Specialista
+    Jazyky
+    Docker
+    Linux
+Barman
+Kola
+    Opravování
+    Jízda
+Sport
+    Gym
+    Běh
+Šachy
+    Nera?
+    Chess.com
+Hry
+    programování
+Vaření
+    Pizza
+Lockpicking
+Doučování
+Socical media manager
+    ig
+    discord
+        hosting
+            nejen na discordu
+Investování
+    Farmakologie
+Moje vyučení/školy
+ekonomie/budování?
+dárce krve
+
+#41C6FF
+#001F3F
+Space MONO
+
+164255
+2B84AA
+41C6FF
+A0E3FF
+C0ECFF
+
+E0F7FF
+
+E0F7FF
+F0FAFF
+EDF6FF
