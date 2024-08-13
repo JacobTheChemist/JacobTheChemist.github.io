@@ -5,62 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jakub Červenka</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="icon.svg" type="image/svg+xml">
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            text-align: left;
-        }
-        h1 {
-            font-size: 3em;
-        }
-        p {
-            font-size: 1.2em;
-        }
-        .top-panel, .bottom-panel {
-            width: 100%;
-            text-align: left;
-            padding: 10px 30px;
-            background-color: #001F3F;
-            color: #41C6FF;
-        }
-        .menu {
-            display: flex;
-            justify-content: left;
-            gap: 20px;
-        }
-        .menu a {
-            color: #41C6FF;
-            text-decoration: none;            
-        }
-        .menu a:hover {
-            color: #ffffff;
-        }
-    </style>
+    <link rel="icon" href="icons/my icons/icon.svg" type="image/svg+xml">
 </head>
 <body>
-    <div class="top-panel">
+    <header class="top-panel">
         <div class="menu" style="display: flex; align-items: center;">
-          <img src="icons/my icons/icon.svg" alt="Icon" style="width: 1.5%; height: auto;" title="Jakub Červenka">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+            <img src="icons/my icons/icon.svg" alt="Icon" style="width: 3vh; height: auto;" title="Jakub Červenka">
+            <a href="#">O mně</a>
+            <a href="#">Kontakt</a>
         </div>
-    </div>
+    </header>
     <div class="container">
         <h1>Jakub Červenka</h1>
         <p>Chemik, IT specialista, Barman</p>
+        <div class="portfolio">
+            <div class="skill-card">
+                <h3>Skill 1</h3>
+                <p>Short description</p>
+                <a href="#" onclick="openModal('skill1-modal', event)">Learn More</a>
+            </div>
+            <div class="skill-card">
+                <h3>Skill 2</h3>
+                <p>Short description</p>
+                <a href="#" onclick="openModal('skill2-modal', event)">Learn More</a>
+            </div>
+            <div class="skill-card">
+                <h3>Skill 3</h3>
+                <p>Short description</p>
+                <a href="#" onclick="openModal('skill3-modal', event)">Learn More</a>
+            </div>
+            <div class="skill-card">
+                <h3>Skill 4</h3>
+                <p>Short description</p>
+                <a href="#" onclick="openModal('skill4-modal', event)">Learn More</a>
+            </div>
+            <!-- Repeat for other skills -->
+        </div>
     </div>
-    <div class="bottom-panel">
-        vytvořil Jakub Červenka
+    <footer class="bottom-panel">
+        Vytvořil Jakub Červenka
+    </footer>
+
+    <div class="modal" id="skill1-modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Skill 1</h2>
+            <p>Detailed information about Skill 1.</p>
+        </div>
     </div>
+    <div class="modal" id="skill2-modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Skill 2</h2>
+            <p>Detailed information about Skill 2.</p>
+        </div>
+    </div>
+    <div class="modal" id="skill3-modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Skill 3</h2>
+            <p>Detailed information about Skill 3.</p>
+        </div>
+    </div>
+    <div class="modal" id="skill4-modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Skill 4</h2>
+            <p>Detailed information about Skill 4.</p>
+        </div>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
