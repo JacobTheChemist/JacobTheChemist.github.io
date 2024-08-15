@@ -8,20 +8,49 @@
     <link rel="icon" href="icons/my icons/icon.svg" type="image/svg+xml">
 </head>
 <body>
-    <header class="top-panel">
-        <div class="menu" style="display: flex; align-items: center;">
-            <img src="icons/my icons/icon.svg" alt="Icon" style="width: 3vh; height: auto;" title="Jakub Červenka">
-            <a href="#">O mně</a>
-            <a href="#">Kontakt</a>
-        </div>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#"><img src="icons/my icons/icon.svg" alt="Chemická baňka"" title="Jakub Červenka"></a></li>
+                <li><a href="#">O mně</a></li>
+                <li><a href="#">Co umím</a></li>
+                <li><a href="#">Sociální sítě</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
     </header>
-    <div class="container">
+
+    <main class="container">
         <h1>Jakub Červenka</h1>
         <p>Chemik, IT specialista, Barman</p>
         <div class="portfolio">
             <div class="skill-card">
                 <h3>Skill 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates cumque a ipsa, est repellendus aperiam obcaecati inventore, debitis odio quos ex laudantium nemo magnam blanditiis officia dignissimos similique eaque fugiat.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates cumque a ipsa, est repellendus aperiam obcaecati inventore, debitis odio quos ex laudantium nemo magnam blanditiis officia dignissimos similique eaque fugiat.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates cumque a ipsa, est repellendus aperiam obcaecati inventore, debitis odio quos ex laudantium nemo magnam blanditiis officia dignissimos similique eaque fugiat.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates cumque a ipsa, est repellendus aperiam obcaecati inventore, debitis odio quos ex laudantium nemo magnam blanditiis officia dignissimos similique eaque fugiat.
+                </p>
+                <a href="#" onclick="openModal('skill1-modal', event)">Více info</a>
+            </div>
+            <div class="skill-card">
+                <h3>Skill 2</h3>
                 <p>Short description</p>
+                <a href="#" onclick="openModal('skill2-modal', event)">Learn More</a>
+            </div>
+            <div class="skill-card">
+                <h3>Skill 3</h3>
+                <p>Short description</p>
+                <a href="#" onclick="openModal('skill3-modal', event)">Learn More</a>
+            </div>
+            <div class="skill-card">
+                <h3>Skill 4</h3>
+                <p>Short description</p>
+                <a href="#" onclick="openModal('skill4-modal', event)">Learn More</a>
+            </div>
+            <div class="skill-card">
+                <h3>Skill 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates cumque a ipsa, est repellendus aperiam obcaecati inventore, debitis odio quos ex laudantium nemo magnam blanditiis officia dignissimos similique eaque fugiat.</p>
                 <a href="#" onclick="openModal('skill1-modal', event)">Learn More</a>
             </div>
             <div class="skill-card">
@@ -41,9 +70,10 @@
             </div>
             <!-- Repeat for other skills -->
         </div>
-    </div>
+    </main>
+
     <footer class="bottom-panel">
-        Vytvořil Jakub Červenka
+        <p>Vytvořil Jakub Červenka</p>
     </footer>
 
     <div class="modal" id="skill1-modal">
