@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 
-@font-face {
-    font-family: 'Space Mono';
-    src: url('fonts/SpaceMono-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 /* Reset some default browser styles */
 * {
     margin: 0;
@@ -30,6 +23,7 @@ body {
 header {
     width: 100%;
     border-bottom: 1px solid #023e58;
+    height: 60px;
 }
 
 footer {
@@ -85,19 +79,22 @@ img {
 /* Default styling for buttons */
 button {
     display: inline-block;
-    padding: 10px 20px;
-    font-size: 1em;
     cursor: pointer;
-    background-color: #41C6FF;
-    color: #001F3F;
     border: none;
 }
 
-button:hover {
-    background-color: #F0FAFF;
-    color: #001F3F;
+/* .instagram-media {
+    display: flex;
+    justify-content: space-between;
+} */
+.instagram-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1em;
 }
-
 
 .navbar a {
     height: 60px; /* Make links fill the height of the navbar */
@@ -109,7 +106,55 @@ button:hover {
 }
 .navbar a:hover {
     background-color: #023e58;
+    border-bottom: 1px solid #41C6FF; /* Change border color on hover */
+    /* box-shadow: 0 0 5px #41C6FF; */
 }
+
+.navbar button {
+    font-family: 'Space Mono', monospace; /* Match font */
+    font-size: 1em; /* Adjust size as needed */
+    height: 60px; /* Make links fill the height of the navbar */
+    padding: 0 1em; /* Adjust padding as needed */
+    line-height: 1px; /* THIS LINE IS CRITICAL I DONT KNOW WHT IT WORKS BUT IT WORKS */
+    border-right: 1px solid #023e58; /* Keep existing right border */
+    border-bottom: 1px solid #023e58; /* Added transparent border */
+    background-color: #001F3F;
+    color: #41C6FF;
+    width: 100%;
+}
+
+.navbar button:hover {
+    background-color: #023e58;
+    border-bottom: 1px solid #41C6FF; /* Added transparent border */
+}
+
+.navbar .dropdown{
+    position: relative;
+}
+
+.navbar .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #001F3F;
+    top: 100%;
+    left: 0;
+    width: auto;
+    z-index: 100;
+    box-shadow: 0px 0px 5px black; /* Corrected box-shadow property */
+}
+
+.navbar button:hover .dropdown-content{
+    display: block;
+}
+
+.navbar .dropdown-content a {
+    border-bottom: 1px solid #023E58;
+    border-left: 1px solid #023E58;
+}
+.navbar .dropdown-content a:hover {
+    border-bottom: 1px solid #41C6FF;
+}
+
 
 .navbar li {
     float: left;
@@ -123,8 +168,7 @@ button:hover {
 .container {
     width:80%;
     margin: auto;
-    margin-top: 10vh;
-    margin-top: 10svh;
+    margin-top: 3em;
     overflow: hidden;
     text-align: center;
 }
@@ -135,6 +179,7 @@ button:hover {
     display: flex;
     flex-wrap: wrap; /* Allow wrapping */
     justify-content: center;
+    margin-bottom: 10px;
 }
 /* Skill card styling */
 .skill-card {
@@ -148,6 +193,7 @@ button:hover {
     position: relative; /* Position for pseudo-element */
     box-shadow: 0 0 10px 0 #000000; /* Box shadow */
     min-height: 600px;
+    cursor: pointer; /* Change cursor to pointer for the whole card */
     /* Added for the last visible word to turn from left (visible) to right background color */
     &::after {
         content: '';
@@ -161,15 +207,6 @@ button:hover {
     }
 }
 
-/* Fade effect for text */
-.skill-card p {
-    max-height: 60px; /* Limit height for paragraph */
-    overflow: visible; /* Hide overflow */
-    text-overflow: ellipsis; /* Show ellipsis for overflow */
-    display: -webkit-box; /* For webkit browsers */
-}
-
-/* Learn More button styling */
 .skill-card a {
     position: absolute; /* Positioning for button */
     bottom: 1em; /* Position at the bottom */
@@ -181,6 +218,18 @@ button:hover {
     text-decoration: none; /* Remove underline */
     border-radius: 5px; /* Rounded corners */
     z-index: 1;
+    pointer-events: auto; /* Allow button to be clickable */
+}
+
+.skill-card:hover {
+    box-shadow: 0 0 10px 0px #41c6ff28, 0 0 0 1px #41C6FF;
+    
+}
+
+/* Fade effect for text */
+.skill-card p {
+    max-height: 0;  /* Limit height for paragraph */
+    text-align: justify; /* Align text to both left and right */
 }
 
 .skill-card a:hover {
@@ -189,7 +238,7 @@ button:hover {
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 925px) {
     .container {
         width: 100%;
     }
@@ -205,6 +254,7 @@ button:hover {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto; /* Allow scrolling if content is too long */
 }
 
 .modal-content {
@@ -213,6 +263,9 @@ button:hover {
     padding: 20px;
     border: 1px solid #023E58;
     width: 80%;
+    max-height: 85%; /* Limit height to allow scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+    text-align: justify;
 }
 
 .close {
