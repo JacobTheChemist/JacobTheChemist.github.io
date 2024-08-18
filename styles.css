@@ -417,3 +417,14 @@ button {
     text-decoration: none;
     cursor: pointer;
 }
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery-item {
+    max-width: 400px;
+}
