@@ -22,7 +22,6 @@ body {
 /* Header and footer styling */
 header {
     width: 100%;
-    border-bottom: 1px solid #023e58;
     height: 60px;
 }
 
@@ -96,14 +95,94 @@ button {
     padding: 0 1em;
 }
 
+/* Desktop Navbar */
+.desktop-navbar {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+}
+
+/* Mobile Navbar */
+.mobile-navbar {
+    display: none; /* Hide by default */
+    background-color: #001F3F;
+    z-index: 2;
+}
+
+/* Show mobile navbar on smaller screens */
+@media (max-width: 768px) {
+    .desktop-navbar {
+        display: none; /* Hide desktop navbar */
+    }
+    .mobile-navbar {
+        display: flex; /* Show mobile navbar */
+        flex-direction: column; /* Stack items vertically */
+    }
+}
+
+/* Container for home icon and JS button */
+.navbar .button-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+    width: 100%; /* Full width */
+}
+
+/* Adjust navbar positioning */
+.navbar {
+    position: relative; /* Keep navbar relative */
+    /* ... existing styles ... */
+}
+
+/* Ensure button remains in its original position */
+.navbar button {
+    flex: 1; /* Allow button to take equal space */
+    /* ... existing styles ... */
+}
+
+
+/* Hide other links by default */
+.navbar ul {
+    display: none; /* Hide by default */
+    position: absolute; /* Position it below the button */
+    top: 100%; /* Position it below the button */
+    left: 0; /* Align to the left */
+    right: 0; /* Stretch to the right */
+}
+
+/* Show links when JS button is clicked */
+.navbar ul.show {
+    display: flex; /* Show links in flex layout */
+    flex-direction: column; /* Stack links vertically */
+    /* Additional styles for dropdown */
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    border-bottom: 1px solid #023E58;
+}
+
+.navbar a, .navbar button {
+    padding: 0.5em 1em; /* Adjust padding as needed */
+}
+
 .navbar a {
     height: 60px; /* Make links fill the height of the navbar */
     padding: 0 1em; /* Adjust padding as needed */
     display: flex; /* Use flex to center text */
     align-items: center; /* Center text vertically */
     text-align: center;
+    z-index: 2;
+    background-color: #001F3F;
+}
+
+.desktop-navbar a {
     border-right: 1px solid #023e58;
 }
+
 .navbar a:hover {
     background-color: #023e58;
     border-bottom: 1px solid #41C6FF; /* Change border color on hover */
@@ -116,12 +195,28 @@ button {
     height: 60px; /* Make links fill the height of the navbar */
     padding: 0 1em; /* Adjust padding as needed */
     line-height: 1px; /* THIS LINE IS CRITICAL I DONT KNOW WHT IT WORKS BUT IT WORKS */
-    border-right: 1px solid #023e58; /* Keep existing right border */
-    border-bottom: 1px solid #023e58; /* Added transparent border */
     background-color: #001F3F;
     color: #41C6FF;
     width: 100%;
 }
+
+.mobile-navbar button {
+    border-bottom: 1px solid #023e58; /* Added transparent border */
+}
+
+.mobile-navbar a {
+    border-right: 1px solid #023E58;
+}
+
+.mobile-navbar .dropdown button {
+    border-bottom: 1px solid #023e58; /* Added transparent border */
+    text-align: left;
+}
+
+.mobile-navbar a {
+    border-bottom: 1px solid #023E58;
+}
+
 
 .navbar button:hover {
     background-color: #023e58;
@@ -130,6 +225,7 @@ button {
 
 .navbar .dropdown{
     position: relative;
+    border-right: 1px solid #023E58;
 }
 
 .navbar .dropdown-content {
@@ -145,6 +241,29 @@ button {
 
 .navbar button:hover .dropdown-content{
     display: block;
+}
+
+.navbar ul.collapsed {
+    display: flex; /* Show the list when collapsed */
+    flex-direction: column; /* Stack items vertically */
+    border: 1px solid #023e58; /* Add border around the navbar */
+}
+
+.navbar .toggle-button {
+    display: none; /* Hide the button by default */
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column; /* Stack items vertically */
+        display: none; /* Hide by default */
+    }
+    .navbar ul.collapsed {
+        display: flex; /* Show the list when not collapsed */
+    }
+    .navbar .toggle-button {
+        display: block; /* Show the button */
+    }
 }
 
 .navbar .dropdown-content a {
@@ -173,6 +292,25 @@ button {
     text-align: center;
 }
 
+.container-static {
+    width:80%;
+    margin: auto;
+    margin-top: 3em;
+    overflow: hidden;
+    text-align: center;
+}
+
+@media (max-width: 925px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container-static p {
+        text-align: left;
+    }
+}
 
 /* Portfolio styling */
 .portfolio {
@@ -238,17 +376,11 @@ button {
 }
 
 
-@media (max-width: 925px) {
-    .container {
-        width: 100%;
-    }
-}
-
 /* Modal styles */
 .modal {
     display: none; /* Hidden by default */
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     left: 0;
     top: 0;
     width: 100%;
@@ -256,7 +388,6 @@ button {
     background-color: rgba(0, 0, 0, 0.5);
     overflow: auto; /* Allow scrolling if content is too long */
 }
-
 .modal-content {
     background-color: #001F3F;
     margin: 15% auto;
@@ -266,6 +397,12 @@ button {
     max-height: 85%; /* Limit height to allow scrolling */
     overflow-y: auto; /* Enable vertical scrolling */
     text-align: justify;
+}
+
+@media (max-width: 480px) {
+    .modal-content {
+        width: 95%;
+    }
 }
 
 .close {

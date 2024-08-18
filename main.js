@@ -35,12 +35,26 @@ window.onload = function() {
     }
 };
 
-// Close modal when clicking outside of it
-window.onclick = function(event) {
-    const modals = document.querySelectorAll('.modal');
-    modals.forEach(modal => {
-        if (event.target === modal) {
-            closeModal();
-        }
-    });
-};
+document.addEventListener('DOMContentLoaded', function() {
+    // Close modal when clicking outside of it
+    window.onclick = function(event) {
+        const modals = document.querySelectorAll('.modal');
+        modals.forEach(modal => {
+            if (event.target === modal) {
+                closeModal();
+            }
+        });
+    };
+
+    // Define toggleNavbar function
+    function toggleNavbar() {
+        const navbarList = document.getElementById('navbar-list');
+        navbarList.classList.toggle('collapsed');
+    }
+
+    // Attach the toggleNavbar function to the button
+    const toggleButton = document.querySelector('.toggle-button');
+    if (toggleButton) {
+        toggleButton.onclick = toggleNavbar;
+    }
+});

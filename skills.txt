@@ -1,0 +1,75 @@
+Duplicates (nepočítaje navbar)
+    Oprava jízdních kol
+        Home, Ostatní
+    Oprava a sestrojení PC
+        Home, IT
+
+Pokud je něco označeno coming soon, znamená to, že v tom mám nedostatek zušeností nebo že jsem to ještě nezačal.
+
+navbar
+    Home
+    O mně
+    Co umím
+        IT
+        Chemie
+        Doučování
+        Barman
+        Ostatní
+    Certifikace
+    Sociální sítě
+    kontakt
+
+Home
+    IT
+    Barman
+        Certifikace
+    Chemie
+    Správa sociálních sítí
+    Doučování
+    Online event koordinátor
+    Oprava Jízdních kol
+    Oprava a sestrojení PC
+    Ostatní
+
+O mně (linky v textu)
+    Kralupský harvard
+    Barman
+
+Sociální sítě (v textu)
+    Správa sociálních sítí
+
+IT
+    Oprava a sestrojení PC/serverů
+    Python (Farming hra, bootdev)
+        Certifikace
+    Další jazyky (C#, C++, Rust, Go)
+    Docker
+    Git
+        Certifikace (coming soon)
+    Linux (server i desktop, historie používání + nobara)
+    Práce na serverech
+    Game dev (coming soon, godot)
+    Tvorba hudby (coming soon)
+
+Doučování
+    Matika
+    Chemie
+
+Ostantí
+    Oprava jízdních kol
+    Kralupský harvard
+    Lockipicking (coming soon)
+    Darování krve (coming soon)
+    Investování (coming soon)
+    Posilování (coming soon)
+    Běh (coming soon)
+    Psaní knih (coming soon)
+    Šachy (coming soon + Nera)
+    Public speaking (coming soon)
+
+Chemie
+    Chemie a věda (tohle je jen poznámka)
+
+Certifikace
+    Barový institut
+    Bootdev
