@@ -3,6 +3,8 @@ Duplicates (nepočítaje navbar)
         Home, Ostatní
     Oprava a sestrojení PC
         Home, IT
+    Vaření
+        Home, Ostatní
 
 Pokud je něco označeno coming soon, znamená to, že v tom mám nedostatek zušeností nebo že jsem to ještě nezačal.
 
@@ -20,26 +22,28 @@ navbar
     kontakt
 
 Home
-    IT
+    IT (link)
     Barman
         Certifikace
-    Chemie
+    Chemie a veda (link)
     Správa sociálních sítí
-    Doučování
+    Doučování (link)
     Online event koordinátor
     Oprava Jízdních kol
     Oprava a sestrojení PC
-    Ostatní
+    Vaření
+        Sociální sítě
+    Ostatní (link)
 
 O mně (linky v textu)
     Kralupský harvard
     Barman
 
-Sociální sítě (v textu)
+Sociální sítě (linky v textu)
     Správa sociálních sítí
 
 IT
-    Oprava a sestrojení PC/serverů
+    Oprava a sestrojení PC a serverů
     Python (Farming hra, bootdev)
         Certifikace
     Další jazyky (C#, C++, Rust, Go)
@@ -67,8 +71,7 @@ Ostantí
     Šachy (coming soon + Nera)
     Public speaking (coming soon)
 
-Chemie
-    Chemie a věda (tohle je jen poznámka)
+Chemie a věda
 
 Certifikace
     Barový institut

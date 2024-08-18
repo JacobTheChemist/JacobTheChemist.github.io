@@ -63,7 +63,7 @@
         <h1>Jakub Červenka</h1>
         <p>Chemik, IT specialista, Barman</p>
         <div class="portfolio">
-            <div class="skill-card" onclick="openModal('skill1-modal', event)">
+            <div class="skill-card" onclick="window.location.href='/IT'">
                 <h3>It specialista</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates cumque a ipsa, est repellendus aperiam obcaecati inventore, debitis odio quos ex laudantium nemo magnam blanditiis officia dignissimos similique eaque fugiat.
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates cumque a ipsa, est repellendus aperiam obcaecati inventore, debitis odio quos ex laudantium nemo magnam blanditiis officia dignissimos similique eaque fugiat.
@@ -72,22 +72,51 @@
                 </p>
                 <a href="#" class="more-info-button">Více info</a>
             </div>
-            <div class="skill-card" onclick="openModal('skill2-modal', event)">
+            <div class="skill-card" onclick="openModal('barman', event)">
                 <h3>Barman</h3>
                 <p>Short description</p>
                 <a href="#" class="more-info-button">Více info</a>
             </div>
-            <div class="skill-card" onclick="openModal('skill3-modal', event)">
-                <h3>Certifikace</h3>
+            <div class="skill-card" onclick="window.location.href='/chemie-a-veda'">
+                <h3>Chemie a věda</h3>
+                <p>Short description</p>
+                <a href="/chemie-a-veda'" class="more-info-button">Více info</a>
+            </div>
+            <div class="skill-card" onclick="openModal('sprava-socialnich-siti', event)">
+                <h3>Správa sociálních sítí</h3>
                 <p>Short description</p>
                 <a href="#" class="more-info-button">Více info</a>
             </div>
-            <div class="skill-card" onclick="window.location.href='/socialni-site'">
-                <h3>Sociální sítě</h3>
+            <div class="skill-card" onclick="window.location.href='/doucovani'">
+                <h3>Doučování</h3>
                 <p>Short description</p>
-                <a href="/socialni-site" class="more-info-button">Více info</a>
+                <a href="/doucovani" class="more-info-button">Více info</a>
             </div>
-            <!-- Repeat for other skills -->
+            <div class="skill-card" onclick="openModal('online-event-koordinator', event)">
+                <h3>Online event koordinátor</h3>
+                <p>Short description</p>
+                <a href="#" class="more-info-button">Více info</a>
+            </div>
+            <div class="skill-card" onclick="openModal('oprava-jizdnich-kol', event)">
+                <h3>Oprava jízdních kol</h3>
+                <p>Short description</p>
+                <a href="#" class="more-info-button">Více info</a>
+            </div>
+            <div class="skill-card" onclick="openModal('oprava-a-sestrojeni-pc-a-serveru', event)">
+                <h3>Oprava a sestrojení PC a serverů</h3>
+                <p>Short description</p>
+                <a href="#" class="more-info-button">Více info</a>
+            </div>
+            <div class="skill-card" onclick="openModal('vareni', event)">
+                <h3>Vaření</h3>
+                <p>Short description</p>
+                <a href="#" class="more-info-button">Více info</a>
+            </div>
+            <div class="skill-card" onclick="window.location.href='/ostatni'">
+                <h3>Ostatní a coming soon</h3>
+                <p>Short description</p>
+                <a href="/ostatni" class="more-info-button">Více info</a>
+            </div>
         </div>
     </main>
 
@@ -95,24 +124,45 @@
         <p>&copy; 2024 Jakub Červenka</p>
     </footer>
 
-    <div class="modal" id="skill1-modal">
+    <div class="modal" id="barman">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
-            <h2>Skill 1</h2>
+            <h2>Barman</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, voluptatibus? Veniam tempora, laborum temporibus ut repudiandae reprehenderit? Corporis maxime voluptatibus alias consectetur, exercitationem laborum est repellendus voluptas ipsa mollitia quam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, laborum! Hic omnis tenetur similique ratione, odit repudiandae sed consectetur error, incidunt fugit atque, commodi tempore voluptates ex expedita reprehenderit vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto amet debitis fugiat eius corrupti asperiores porro nihil iste, odio ipsum blanditiis animi quidem quos ullam eum repudiandae perspiciatis veniam veritatis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat excepturi nihil impedit sapiente quod qui aut laudantium. Vitae repellat, assumenda, quae beatae doloribus expedita dignissimos voluptas ipsa et sapiente accusantium?</p>
         </div>
     </div>
-    <div class="modal" id="skill2-modal">
+    <div class="modal" id="sprava-socialnich-siti">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
-            <h2>Skill 2</h2>
+            <h2>Správa sociálních sítí</h2>
             <p>Detailed information about Skill 2.</p>
         </div>
     </div>
-    <div class="modal" id="skill3-modal">
+    <div class="modal" id="online-event-koordinator">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
-            <h2>Skill 3</h2>
+            <h2>Online event koordinátor</h2>
+            <p>Detailed information about Skill 3.</p>
+        </div>
+    </div>
+    <div class="modal" id="oprava-jizdnich-kol">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Oprava jízdních kol</h2>
+            <p>Detailed information about Skill 3.</p>
+        </div>
+    </div>
+    <div class="modal" id="oprava-a-sestrojeni-pc-a-serveru">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Oprava a sestrojení PC a serverů</h2>
+            <p>Detailed information about Skill 3.</p>
+        </div>
+    </div>
+    <div class="modal" id="vareni">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Vaření</h2>
             <p>Detailed information about Skill 3.</p>
         </div>
     </div>
