@@ -133,13 +133,6 @@ button {
     /* ... existing styles ... */
 }
 
-/* Ensure button remains in its original position */
-.navbar button {
-    flex: 1; /* Allow button to take equal space */
-    /* ... existing styles ... */
-}
-
-
 /* Hide other links by default */
 .navbar ul {
     display: none; /* Hide by default */
@@ -194,7 +187,7 @@ button {
     font-size: 1em; /* Adjust size as needed */
     height: 60px; /* Make links fill the height of the navbar */
     padding: 0 1em; /* Adjust padding as needed */
-    line-height: 1px; /* THIS LINE IS CRITICAL I DONT KNOW WHT IT WORKS BUT IT WORKS */
+    line-height: 60px; /* Adjusted to match button height */
     background-color: #001F3F;
     color: #41C6FF;
     width: 100%;

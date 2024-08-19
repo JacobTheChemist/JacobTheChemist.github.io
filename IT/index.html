@@ -22,7 +22,7 @@
                                 <a href="/chemie-a-veda">Chemie a věda</a>
                                 <a href="/doucovani">Doučování</a>
                                 <a href="/barman">Barman</a>
-                                <a href="/ostatni">Ostatní a coming soon</a>a>
+                                <a href="/ostatni">Ostatní a coming soon</a>
                             </div>
                         </button>
                     </div>
@@ -52,14 +52,13 @@
                     </div>
                 </li>
                 <li><a href="/certifikace">Certifikace</a></li>
-                <li><a href="/kontakt-a-socialni-site">Kontakt a sociální sítě</a></li>i>
+                <li><a href="/kontakt-a-socialni-site">Kontakt a sociální sítě</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="container">
-        <h1>Jakub Červenka</h1>
-        <p>Chemik, IT specialista, Barman</p>
+        <h1>Moje IT zkušenosti</h1>
         <div class="portfolio">
             <div class="skill-card" onclick="openModal('python', event)">
                 <h3>Python</h3>
@@ -76,6 +75,11 @@
                 <p>Short description</p>
                 <a href="#" class="more-info-button">Více info</a>
             </div>
+            <div class="skill-card" onclick="openModal('docker', event)">
+                <h3>Docker</h3>
+                <p>Short description</p>
+                <a href="#" class="more-info-button">Více info</a>
+            </div>
             <div class="skill-card" onclick="openModal('oprava-a-sestrojeni-pc-a-serveru', event)">
                 <h3>Oprava a sestrojení PC a serverů</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates cumque a ipsa, est repellendus aperiam obcaecati inventore, debitis odio quos ex laudantium nemo magnam blanditiis officia dignissimos similique eaque fugiat.
@@ -87,12 +91,7 @@
             </div>
             <div class="skill-card" onclick="openModal('dalsi-jazyky', event)">
                 <h3>Další jazyky</h3>
-                <p>Short description</p>
-                <a href="#" class="more-info-button">Více info</a>
-            </div>
-            <div class="skill-card" onclick="openModal('docker', event)">
-                <h3>Docker</h3>
-                <p>Short description</p>
+                <p>Plánuji se naučit další jazyky jako je C#, C++, Rust, Go</p>
                 <a href="#" class="more-info-button">Více info</a>
             </div>
             <div class="skill-card" onclick="openModal('game-dev', event)">
@@ -102,7 +101,7 @@
             </div>
             <div class="skill-card" onclick="openModal('hudba', event)">
                 <h3>Tvorba hudby</h3>
-                <p>Comign soon</p>
+                <p>Coming soon</p>
                 <a href="#" class="more-info-button">Více info</a>
             </div>
         </div>
@@ -133,6 +132,13 @@
             <p>Detailed information about Skill 2.</p>
         </div>
     </div>
+    <div class="modal" id="docker">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Docker</h2>
+            <p>Detailed information about Skill 2.</p>
+        </div>
+    </div>
     <div class="modal" id="oprava-a-sestrojeni-pc-a-serveru">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
@@ -145,13 +151,6 @@
             <span class="close" onclick="closeModal()">&times;</span>
             <h2>Další jazyky</h2>
             <p>Detailed information about Skill 3.</p>
-        </div>
-    </div>
-    <div class="modal" id="docker">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <h2>Docker</h2>
-            <p>Detailed information about Skill 2.</p>
         </div>
     </div>
     <div class="modal" id="game-dev">
