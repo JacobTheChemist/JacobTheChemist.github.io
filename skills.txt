@@ -22,7 +22,7 @@ navbar
         IT
         Chemie
         Doučování
-        Barman
+        Barman (link)
         Ostatní
     Certifikace
     Sociální sítě
@@ -82,3 +82,10 @@ Chemie a věda
 Certifikace
     Barový institut
     Bootdev
+
+
+
+
+ADD IT SKILLS
+ADD CHEMICAL EXPERIMENTS
+FIX navbar Barman to link to /#barman

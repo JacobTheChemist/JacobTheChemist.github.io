@@ -291,6 +291,8 @@ button {
     margin-top: 3em;
     overflow: hidden;
     text-align: center;
+    text-align: justify;
+    width: 65%;
 }
 
 @media (max-width: 925px) {
@@ -300,8 +302,9 @@ button {
 }
 
 @media (max-width: 480px) {
-    .container-static p {
+    .container-static {
         text-align: left;
+        width: 90%;
     }
 }
 

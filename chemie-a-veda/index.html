@@ -21,7 +21,7 @@
                                 <a href="/IT">IT</a>
                                 <a href="/chemie-a-veda">Chemie a věda</a>
                                 <a href="/doucovani">Doučování</a>
-                                <a href="/barman">Barman</a>
+                                <a href="/#barman">Barman</a>
                                 <a href="/ostatni">Ostatní a coming soon</a>
                             </div>
                         </button>
@@ -45,7 +45,7 @@
                                 <a href="/IT">IT</a>
                                 <a href="/chemie-a-veda">Chemie a věda</a>
                                 <a href="/doucovani">Doučování</a>
-                                <a href="/barman">Barman</a>
+                                <a href="/#barman">Barman</a>
                                 <a href="/ostatni">Ostatní a coming soon</a>
                             </div>
                         </button>
@@ -64,30 +64,41 @@
 
         </p>
         <div class="portfolio">
-            <div class="skill-card" onclick="openModal('skill1-modal', event)">
+            <div class="skill-card" onclick="openModal('horici-ruce', event)">
                 <h3>Hořící ruce</h3>
-                <p></p>
+                <p>Tohle je jeden z mých nejoblíbenějších experimentů. Vždy ho předvedu prvně na sobě a ukazuji ostatním co dodržuju za bezpečnost a potom nechám kohokoliv co bude chtít hořet.
+                    Vezmu mělkou nádobu, přidám do ní vodu s mýdlem, rostřepuji aby tam byly bublinky, potom vezmu doplňovač zapalovačů který vypustím do té vody, tam se vytvoří bubliny.
+                    Sundám si cokoliv co mám na rukou, hodinky, prstýnky atd.. Opláchnu si ruce jinou vodou až po lokty a poté zespoda naberu bublinky s plynem, odejdu o pár kroků dál a někdo mě zapálí.
+                    Vzplanou mi ruce, ale protože jsou mokré, tak se mi nemůže nic stát, a pokud se budu cítit nekomfortně, tak rychlím švihem rukou se plamene zbavím.
+                </p>
                 <a href="#" class="more-info-button">Více info</a>
             </div>
-            <div class="skill-card" onclick="openModal('skill2-modal', event)">
+            <div class="skill-card" onclick="openModal('modry-plamen', event)">
                 <h3>Modrý plamen</h3>
-                <p>Short description</p>
+                <p>Modrý plamen velmi dobrý experiment na ukázku barvení plamenů pomocí kationtů. Vezmu si erlenmeyerovu baňku, naliju do ní koncentrovanou kyselinu chlorovodíkovou, rozpustím v ní přiměřené množštví modré skalice.
+                    Všechno dělám na tácu, kdyby experiment přetekl, tak ať nemusím nic navíc uklízet. Vhodím do baňky zmačkaný kuličky alobalu a zapalím unikající vodík. Ten hoří modrozelenou barvou.
+                </p>
                 <a href="#" class="more-info-button">Více info</a>
             </div>
-            <div class="skill-card" onclick="openModal('skill3-modal', event)">
+            <div class="skill-card" onclick="openModal('sloni-pasta', event)">
                 <h3>Sloní pasta</h3>
-                <p>Short description</p>
+                <p>Sloní pasta je obyčejný, ale pěkný, experiment. V odměrným válci smícháme mýdlo a peroxid vodíku(30%). V malé kádince vedle rozpustíme jodid draselný ve vodě. Nejlepší je mít nasycený roztok, ale není zcela za potřebí.
+                    Ten potom rychle vylejeme do válce a jen koukáme na valící se pěnu.
+                </p>
                 <a href="#" class="more-info-button">Více info</a>
             </div>
-            <div class="skill-card" onclick="window.location.href='/socialni-site'">
+            <div class="skill-card" onclick="openModal('vodikove-balonky', event)">
                 <h3>Vodíkové balónky</h3>
-                <p>Short description</p>
-                <a href="/socialni-site" class="more-info-button">Více info</a>
+                <p>Tento experiment funguje na stejném principu jako modrý plamen. Vytvoříme si utěsněnou aparaturu s různými přepadovými pojistky. Musíme být také velmi opatrní s plamenem protože vodík se vzduchem vytváří výbušnou směs.
+                    Smícháme koncentrovanou kyselinu chlorovodíkovou s alobalem a chytáme přes aparaturu do balónku. Doporočuji prvně vytvářený vodík chladit. Potom co máme dostatečně plný balónek. Ho přivážeme na místo a potom ho z dálky zapálíme.
+                    Nejlépe alespoň metrovou tyčí. Pro větší efekt odpalujeme balónek v místnosti ozvěna z výbuchu zesílí efekt, ale v tomto případě doporočuji ochranu sluchu minimálně člověku, který odpaluje daný balónek. 
+                </p>
+                <a href="#" class="more-info-button">Více info</a>
             </div>
-            <div class="skill-card" onclick="window.location.href='/socialni-site'">
+            <div class="skill-card" onclick="openModal('fotograficky-prach', event)">
                 <h3>Fotografický prach</h3>
-                <p>Short description</p>
-                <a href="/socialni-site" class="more-info-button">Více info</a>
+                <p>Fotografický prach je smíchaná směs dusičanu draselného, cukru a práškového hořčíku. Při zapálení rychle vzplane vytvoří spoustu bílého svěla. Nedoporočuji se koukat přímo na něj. Délka hoření závisí hlavně na poměru.</p>
+                <a href="#" class="more-info-button">Více info</a>
             </div>
         </div>
     </main>
@@ -96,25 +107,47 @@
         <p>&copy; 2024 Jakub Červenka</p>
     </footer>
 
-    <div class="modal" id="skill1-modal">
+    <div class="modal" id="horici-ruce">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
-            <h2>Skill 1</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, voluptatibus? Veniam tempora, laborum temporibus ut repudiandae reprehenderit? Corporis maxime voluptatibus alias consectetur, exercitationem laborum est repellendus voluptas ipsa mollitia quam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, laborum! Hic omnis tenetur similique ratione, odit repudiandae sed consectetur error, incidunt fugit atque, commodi tempore voluptates ex expedita reprehenderit vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto amet debitis fugiat eius corrupti asperiores porro nihil iste, odio ipsum blanditiis animi quidem quos ullam eum repudiandae perspiciatis veniam veritatis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat excepturi nihil impedit sapiente quod qui aut laudantium. Vitae repellat, assumenda, quae beatae doloribus expedita dignissimos voluptas ipsa et sapiente accusantium?</p>
+            <h2>Hořící ruce</h2>
+            <p>Tohle je jeden z mých nejoblíbenějších experimentů. Vždy ho předvedu prvně na sobě a ukazuji ostatním co dodržuju za bezpečnost a potom nechám kohokoliv co bude chtít hořet.
+                Vezmu mělkou nádobu, přidám do ní vodu s mýdlem, rostřepuji aby tam byly bublinky, potom vezmu doplňovač zapalovačů který vypustím do té vody, tam se vytvoří bubliny.
+                Sundám si cokoliv co mám na rukou, hodinky, prstýnky atd.. Opláchnu si ruce jinou vodou až po lokty a poté zespoda naberu bublinky s plynem, odejdu o pár kroků dál a někdo mě zapálí.
+                Vzplanou mi ruce, ale protože jsou mokré, tak se mi nemůže nic stát, a pokud se budu cítit nekomfortně, tak rychlím švihem rukou se plamene zbavím.</p>
         </div>
     </div>
-    <div class="modal" id="skill2-modal">
+    <div class="modal" id="modry-plamen">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
-            <h2>Skill 2</h2>
-            <p>Detailed information about Skill 2.</p>
+            <h2>Modrý plamen</h2>
+            <p>Modrý plamen velmi dobrý experiment na ukázku barvení plamenů pomocí kationtů. Vezmu si erlenmeyerovu baňku, naliju do ní koncentrovanou kyselinu chlorovodíkovou, rozpustím v ní přiměřené množštví modré skalice.
+                Všechno dělám na tácu, kdyby experiment přetekl, tak ať nemusím nic navíc uklízet. Vhodím do baňky zmačkaný kuličky alobalu a zapalím unikající vodík. Ten hoří modrozelenou barvou.</p>
         </div>
     </div>
-    <div class="modal" id="skill3-modal">
+    <div class="modal" id="sloni-pasta">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
-            <h2>Skill 3</h2>
-            <p>Detailed information about Skill 3.</p>
+            <h2>Sloní pasta</h2>
+            <p>Sloní pasta je obyčejný, ale pěkný, experiment. V odměrným válci smícháme mýdlo a peroxid vodíku(30%). V malé kádince vedle rozpustíme jodid draselný ve vodě. Nejlepší je mít nasycený roztok, ale není zcela za potřebí.
+                Ten potom rychle vylejeme do válce a jen koukáme na valící se pěnu.</p>
+        </div>
+    </div>
+    <div class="modal" id="vodikove-balonky">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Vodíkové balónky</h2>
+            <p>Tento experiment funguje na stejném principu jako modrý plamen. Vytvoříme si utěsněnou aparaturu s různými přepadovými pojistky. Musíme být také velmi opatrní s plamenem protože vodík se vzduchem vytváří výbušnou směs.
+                Smícháme koncentrovanou kyselinu chlorovodíkovou s alobalem a chytáme přes aparaturu do balónku. Doporočuji prvně vytvářený vodík chladit. Potom co máme dostatečně plný balónek. Ho přivážeme na místo a potom ho z dálky zapálíme.
+                Nejlépe alespoň metrovou tyčí. Pro větší efekt odpalujeme balónek v místnosti ozvěna z výbuchu zesílí efekt, ale v tomto případě doporočuji ochranu sluchu minimálně člověku, který odpaluje daný balónek. 
+            </p>
+        </div>
+    </div>
+    <div class="modal" id="fotograficky-prach">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Fotografický prach</h2>
+            <p>Fotografický prach je smíchaná směs dusičanu draselného, cukru a práškového hořčíku. Při zapálení rychle vzplane vytvoří spoustu bílého svěla. Nedoporočuji se koukat přímo na něj. Délka hoření závisí hlavně na poměru.</p>
         </div>
     </div>
 </body>
