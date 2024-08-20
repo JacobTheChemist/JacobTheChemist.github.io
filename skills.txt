@@ -8,12 +8,15 @@ Duplicates (nepočítaje navbar)
 
 Pokud je něco označeno coming soon, znamená to, že v tom mám nedostatek zušeností nebo že jsem to ještě nezačal.
 
-Kralupský harvard
-Kralupský harvard byla jedna ze dvou středních škol v Kralupech, po jejíž zrušením zbylo jen Kralupského gymnázium. Nevím, kam plánujou jít všichni ti studenti z minimálně pěti základních škol v Kralupech, ale do Kralupech to viditelně nebude
-My studenti z již bývalého Kralupského Harvardu jsme se tehdy sjednotily a sesbíraly jsme přes 6000 podpisů https://www.petice.com/petice_za_zachovani_so_a_sou_kralupy_nad_vltavou a kolem 4000 osobně
-Schromáždili jsme se dokonce i před krajským úřadem středočeského kraje v Praze, před kterým jsme v mrazivém dnu rozhodnutí o budoucnosti naší školy protestovaly. Odhlasovali uvědomění o naší petici a potom naši školu zavřeli.
 
-Kontakoval jsem přes 70 různých politiků, z niž mi něco udělala jen tehdejší europoslankyně Radka Maxová
+
+Kralupský harvard byla moje bývalá střední škola, jedna ze dvou středních škol v Kralupech. Do dnes si myslím že její zrušení bylo zbytečné. Spoustu základních škol bylo postaveno kvůli demografické vlně dětí a my zrušíme jednu ze dvou středních škol v Kralupech zrovna, když si děti z této vlny hledají střední školy,
+My studenti z již bývalého Kralupského Harvardu jsme se tehdy sjednotily a sesbíraly jsme kolem 6000 podpisů, 1700 <a href="https://www.petice.com/petice_za_zachovani_so_a_sou_kralupy_nad_vltavou" target="_blank">tady online</a> a přes 4000 osobně.
+Schromáždili jsme se dokonce i před krajským úřadem středočeského kraje v Praze, kde jsme v mrazivém dnu rozhodnutí o budoucnosti naší školy protestovaly. Odhlasovali uvědomění o naší petici a potom naši školu zavřeli.
+
+Kontakoval jsem přes 70 různých politiků a vlivných osob, z niž se v naší situaci zaujmula jen tehdejší europoslankyně Radka Maxová. Měla v plánu se i v naší skole zastavit, ale to nevím jestli se nakonec stalo.
+
+Tuhle kategorii budu postupem času ještě rozšiřovat.
 
 navbar
     Home
@@ -82,10 +85,3 @@ Chemie a věda
 Certifikace
     Barový institut
     Bootdev
-
-
-
-
-ADD IT SKILLS
-ADD CHEMICAL EXPERIMENTS
-FIX navbar Barman to link to /#barman
