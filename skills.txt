@@ -85,3 +85,7 @@ Chemie a věda
 Certifikace
     Barový institut
     Bootdev
+
+TODO
+
+Přidat bývalé pracovní zkušenosti
